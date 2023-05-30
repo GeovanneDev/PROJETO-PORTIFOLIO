@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    font-size: 62.5%;
+    --text: #0b0b0b;
+    font-family: 'inter';
+    background-color:#121212;
+}
+
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 100dvw;
+    min-height: 100dvh;
+    overflow: hidden;
+    font-family: 'inter';
+}
+
+a {
+    text-decoration: none;
+}
+
+/*===== HEADER =====*/
+/* .logo {
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color:hsl(var(--hue-color), 56%, 12%);
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-inline-end: 25em;
+  }
+  */
+
+.nav__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 15px 15px 10px rgba(0, 123, 255, 0.15);
+    background-color:#121212;
+    height: 8vh;
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 5em;
+}
+
+.nav-list a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.8rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.nav-list :hover {
+    border-bottom: solid 3px #3701f9;
+}
+
+.nav-list li {
+    letter-spacing: 1px;
+    margin-left: 32px;
+    font-weight: 600;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 25px;
+    height: 2px;
+    background: #ffffff;
+    margin: 8px;
+    transition: 0.3s;
+    box-shadow: 1px 4px 5px rgb(255, 255, 255);
+}
+
+/*===== HEADER =====*/
+/*===== HEADER-MOBILE =====*/
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        gap: 10em;
+        padding: 2em;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 95vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        gap: 5em;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-top: 3em;
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .nav-list a {
+        color: #ffffff;
+        font-weight: 400;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+/*===== HEADER-MOBILE =====*/
+
+
+/*===== MAIN =====*/
+.section_home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8em;
+    flex-wrap: wrap;
+}
+
+.section_home-written {
+    display: flex;
+    flex-direction: column;
+    line-height: 5em;
+}
+
+.home__img {
+    height: auto;
+    width: 30%;
+}
+
+.section_home-written__title {
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+}
+
+
+.section_home-written__title span {
+    color: rgb(91, 91, 240);
+    font-weight: bold;
+}
+
+.btn-home {
+    background-color: rgb(91, 91, 240);
+    width: 30%;
+    border-radius: 1em;
+    margin-top: 3em;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 0px rgb(1, 1, 1);
+}
+
+.btn-home p {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.btn-home:hover {
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.btn-home p:hover {
+    color: rgb(91, 91, 240);
+    font-weight: 700;
+
+}
+
+.home__social {
+    display: flex;
+    margin-top: 2em;
+    gap: 1em;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .section_home {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .section_home-written{
+        line-height: 5em;
+    }
+
+    .home__social{
+        display: flex;
+        justify-content: center;
+        margin-top: 3em;
+        
+    }
+
+    .btn-home {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: 0;
+        margin-top: 3em;
+    }
+
+    .home__img{
+        width: 100%;
+        height: auto;
+    }
+}
+/*===== MAIN =====*/
