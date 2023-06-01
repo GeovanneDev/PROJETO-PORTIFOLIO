@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -12,7 +13,7 @@
     font-size: 62.5%;
     --text: #0b0b0b;
     font-family: 'inter';
-    background-color:#121212;
+    background-color: #121212;
 }
 
 
@@ -26,6 +27,7 @@
     overflow: hidden;
     font-family: 'inter';
 }
+
 
 a {
     text-decoration: none;
@@ -48,7 +50,7 @@ a {
     justify-content: space-around;
     align-items: center;
     box-shadow: 15px 15px 10px rgba(0, 123, 255, 0.15);
-    background-color:#121212;
+    background-color: #121212;
     height: 8vh;
 }
 
@@ -72,7 +74,7 @@ a {
 .nav-list :hover {
     border-bottom: solid 3px #3701f9;
     transition: 0.7s ease;
-    
+
 }
 
 .nav-list li {
@@ -81,6 +83,9 @@ a {
     font-weight: 600;
 }
 
+/*===== HEADER =====*/
+
+/*===== HEADER-MOBILE =====*/
 .mobile-menu {
     display: none;
     cursor: pointer;
@@ -95,8 +100,6 @@ a {
     box-shadow: 1px 4px 5px rgb(255, 255, 255);
 }
 
-/*===== HEADER =====*/
-/*===== HEADER-MOBILE =====*/
 @media (max-width: 999px) {
     body {
         overflow-x: hidden;
@@ -166,10 +169,20 @@ a {
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 /*===== HEADER-MOBILE =====*/
 
 
+.l-main {
+    max-width: 100%;
+    margin-inline: auto;
+    margin-block: 2rem;
+}
+
 /*===== MAIN =====*/
+
+
+/*===== SECTION_HOME =====*/
 .section_home {
     display: flex;
     justify-content: space-evenly;
@@ -198,6 +211,7 @@ a {
     font-weight: 500;
     font-family: 'Roboto Slab', serif;
     color: #ffffff;
+
 }
 
 
@@ -212,7 +226,7 @@ a {
     border-radius: 1em;
     margin-top: 3em;
     cursor: pointer;
-    box-shadow: 3px 3px 5px 0px rgb(1, 1, 1);
+    box-shadow: 1px 1px 3px 0px rgb(255, 255, 255);
 }
 
 .btn-home p {
@@ -246,15 +260,15 @@ a {
         font-size: 1rem;
     }
 
-    .section_home-written{
+    .section_home-written {
         line-height: 5em;
     }
 
-    .home__social{
+    .home__social {
         display: flex;
         justify-content: center;
         margin-top: 3em;
-        
+
     }
 
     .btn-home {
@@ -266,9 +280,237 @@ a {
         margin-top: 3em;
     }
 
-    .home__img{
+    .home__img {
         width: 100%;
         height: auto;
     }
 }
+
+/*===== SECTION_HOME =====*/
+
+/*===== SECTION_ABOUT =====*/
+.section_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8em;
+    flex-wrap: wrap;
+
+    animation: backInUp;
+    animation-duration: 4s;
+}
+
+.section_about-written {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section_about__tile {
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+    color: #fefeff;
+    font-size: 3rem;
+
+}
+
+.section_about-written {
+    padding: 2em;
+    text-align: center;
+
+}
+
+
+.section_about-written h2 {
+    font-family: 'Roboto Slab', serif;
+    color: rgb(91, 91, 240);
+    ;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.section_about-written p {
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-align: left;
+}
+
+.section_about-btns {
+    display: flex;
+    gap: 3em;
+
+}
+
+
+
+.section_about-btns a {
+    background-color: rgb(91, 91, 240);
+    width: 15em;
+    padding: 0.5em;
+    border-radius: 6px;
+    margin-top: 2em;
+    cursor: pointer;
+
+    box-shadow: 1px 1px 3px 0px rgb(255, 255, 255);
+}
+
+
+.section_about-btns p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+    gap: 1em;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+@media (max-width: 600px) {
+    .section_about-written {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_about {
+        max-width: 800px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .section_about-written>p {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 15px;
+        text-align: left;
+        margin: 0;
+        justify-content: flex-start;
+    }
+}
+
+/*===== SECTION_ABOUT =====*/
+
+.skills__container {
+    row-gap: 2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+    color: #fefeff;
+    font-size: 3rem;
+}
+
+.skills__subtitle {
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+    color: #0000ff;
+    font-size: 3rem;
+}
+
+.skills__text {
+    color: rgb(255, 255, 255);
+    margin-bottom: 5em;
+    margin-top: 2em;
+    font-size: 2rem;
+}
+
+.skills__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    color: rgb(0, 0, 0);
+
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-left: 0.5em;
+}
+
+.skills__percentage {
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+.skills__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    margin-bottom: var(--mb-4);
+    border-radius: 1.1rem;
+    width: 30%;
+    height: 6em;
+    margin-top: 3em;
+    margin-left: 9em;
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+}
+
+.skills__icon {
+    font-size: 2rem;
+    margin-right: blue;
+    color: rgb(43, 28, 28);
+}
+
+
+
+
+.skills__bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(30, 0, 255);
+    height: 0.5rem;
+    border-radius: 5rem;
+    margin-bottom: 0.3em;
+    margin-left: 0.5em;
+}
+
+.skills__html {
+    width: 95%;
+}
+
+.skills__css {
+    width: 75%;
+}
+
+.skills__js {
+    width: 35%;
+}
+
+.skills__ux {
+    width: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .skills__subtitle{
+        margin-top: 2em;
+    }
+
+    .skills__text{
+        text-align: center;
+    }
+
+    .skills__data {
+        margin: 0;
+        margin-top: 2em;
+        width: auto;
+        height: 7em;
+    }
+}
+
 /*===== MAIN =====*/
