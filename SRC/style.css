@@ -227,7 +227,11 @@ span {
   margin: 0.5rem 0;
 }
 
-.language {
+.about h1 {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* .language {
   margin-bottom: 15px;
 }
 
@@ -260,6 +264,11 @@ span {
 .french {
   width: 50%;
 }
+ */
+
+ .about-item{
+  font-family: 'Roboto Slab', serif;
+ }
 
 .skill {
   display: flex;
@@ -350,7 +359,7 @@ span {
   width: 2px;
   top: 55px;
   height: calc(100% - 100px);
-  background-color: blue;
+  background-color: rgb(0, 0, 255);
   z-index: 100;
 }
 
@@ -361,7 +370,7 @@ span {
 .timeline-date::before {
   content: "";
   position: absolute;
-  background-color: blue;
+  background-color: rgb(0, 0, 255);
   left: -25px;
   top: 5px;
   width: 12px;
@@ -379,6 +388,10 @@ span {
 
 /*=============== FORM ===============*/
 
+.content-card h1 {
+  font-family: 'Roboto Slab', serif;
+}
+
 form {
   width: 100%;
   max-width: 600px;
@@ -393,9 +406,10 @@ form {
 textarea {
   width: 100%;
   margin: 1rem;
-  color: var(--accent-color);
+  color: black;
   font-size: 1rem;
   padding-left: 0.3rem;
+  font-weight: bold;
 }
 
 .input-box input::placeholder,
@@ -430,7 +444,7 @@ textarea {
 
 .submit-btn {
   color: var(--accent-color);
-  background-color: #fff;
+  background-color: #817d7d;
   padding: 10px 20px;
   margin: 50px 0;
   border-radius: 30px;
@@ -448,7 +462,7 @@ textarea {
   cursor: pointer;
 }
 
-/*=============== MEDIA QUERY ===============*/
+/*=============== RESPONSIVIDADE ===============*/
 
 @media screen and (max-width: 1200px) {
   html {
@@ -545,3 +559,4 @@ textarea {
     width: 0;
     height: 0;
   }
+  
