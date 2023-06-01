@@ -5,340 +5,373 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./SRC/assets/navigation_icon.svg" sizes="160x160">
+    <link rel="icon" href="./SRC/assets/navigation_icon.png" sizes="160x160">
     <link rel="stylesheet" href="./SRC/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Portifólio Geovanne</title>
 </head>
 
 <body>
-    <div class="app">
-        <!--===== HEADER =====-->
-        <header>
-            <nav class="nav__menu">
-                <a class="logo" href="">
-                    <svg width="50" height="90" viewBox="0 0 111 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M30.0481 13.1324C28.5404 13.1324 27.3557 13.3477 26.4941 13.7783C25.7043 14.2088 25.1299 15.1776 24.7709 16.6846C24.4837 18.1916 24.3401 20.5956 24.3401 23.8967V34.4456C24.3401 37.1726 23.9093 39.5407 23.0477 41.5501C22.2579 43.4876 21.3245 45.0664 20.2475 46.2863C19.1705 47.5063 18.1653 48.4392 17.2319 49.085C18.0217 49.6591 18.9551 50.5562 20.0321 51.7761C21.1809 52.9243 22.1861 54.3595 23.0477 56.0818C23.9093 57.7323 24.3401 59.5981 24.3401 61.6792V74.5963C24.3401 77.8256 24.4837 80.1938 24.7709 81.7008C25.1299 83.2078 25.7043 84.1765 26.4941 84.6071C27.3557 85.0377 28.5404 85.253 30.0481 85.253H34.033V98.3854H25.5248C23.5144 98.3854 21.504 98.3495 19.4936 98.2777C17.555 98.206 15.76 97.8113 14.1086 97.0937C12.4572 96.4478 11.1289 95.192 10.1237 93.3262C9.19035 91.5321 8.72366 88.9128 8.72366 85.4682V67.7072C8.72366 65.5544 8.40056 63.545 7.75436 61.6792C7.10816 59.7417 6.13887 58.1629 4.84648 56.943C3.55408 55.723 1.93859 55.113 0 55.113V42.6265C1.93859 42.5547 3.55408 41.9447 4.84648 40.7966C6.13887 39.5766 7.10816 38.0337 7.75436 36.1679C8.40056 34.2304 8.72366 32.1852 8.72366 30.0323V13.0248C8.72366 9.5802 9.19035 6.96089 10.1237 5.16685C11.0571 3.37281 12.3136 2.11698 13.8932 1.39936C15.5446 0.68174 17.3755 0.287048 19.3859 0.215282C21.3963 0.0717617 23.4426 0 25.5248 0H34.033V13.1324H30.0481ZM110.345 50.0538C110.345 57.3735 109.447 64.2268 107.652 70.6136C105.929 77.0004 103.703 82.6695 100.975 87.6211C98.2466 92.6444 95.3387 96.7707 92.2513 100L79.8659 94.2949C82.6661 91.0657 85.179 87.2623 87.4048 82.8848C89.6306 78.5791 91.3897 73.6993 92.6821 68.2454C93.9745 62.7198 94.6207 56.6559 94.6207 50.0538C94.6207 43.4517 93.9745 37.4238 92.6821 31.9699C91.3897 26.4442 89.6306 21.5285 87.4048 17.2228C85.179 12.8454 82.6661 9.07787 79.8659 5.92035L92.2513 0.107641C95.3387 3.33693 98.2466 7.46323 100.975 12.4865C103.703 17.5099 105.929 23.2149 107.652 29.6017C109.447 35.9168 110.345 42.7341 110.345 50.0538Z"
-                            fill="#884FFE" />
-                    </svg>
-                </a>
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-                <ul class="nav-list">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!--===== HEADER =====-->
+    <nav id="navbar" class="navbar"><a href="#"></a></nav>
 
-        <main class="l-main">
-            <section class="section_home" id="home">
-                <div class="section_home-written">
-                    <h1 class="section_home-written__title">
-                        Olá, <br>
-                        Eu sou <span>Geovanne <img src="./SRC/assets/mao.gif" alt="" width="40px" height="40px"></span>
-                        <br>
-                        futuro desenvolvedor FrontEnd
-                    </h1>
+    <div class="container">
+        <!--=============== NAVIGATION MENU ===============-->
 
-                    <a href="tel:+5531985789847" class="btn-home">
-                        <p>
-                            Contato
-                        </p>
-                    </a>
+        <div class="menu">
+            <a href="#welcome-section" class="menu-icon fas fa-home"></a>
+            <a href="#about" class="menu-icon fas fa-user"></a>
+            <a href="#projects" class="menu-icon fas fa-code"></a>
+            <a href="#experience" class="menu-icon fas fa-briefcase"></a>
+            <a href="#contact" class="menu-icon fas fa-envelope"></a>
+        </div>
 
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/geovanne-fernandes-479929238/" class="home__social-icon"><i
-                                class='bx bxl-linkedin'></i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
-                                width="48px" height="48px">
-                                <path fill="#0078d4"
-                                    d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5 V37z" />
-                                <path
-                                    d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364 c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274 L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479 C18,16.523,16.521,18,14.485,18H18v19H11z"
-                                    opacity=".05" />
-                                <path
-                                    d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677 c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638 c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001 c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z"
-                                    opacity=".07" />
-                                <path fill="#fff"
-                                    d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12 c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698 c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19 c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z" />
-                            </svg></a>
+        <!--=============== MAIN "WINDOW" ===============-->
 
-                        <a href="" class="home__social-icon"><i class='bx bxl-behance'></i><svg
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-                                <radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop offset="0" stop-color="#fd5" />
-                                    <stop offset=".328" stop-color="#ff543f" />
-                                    <stop offset=".348" stop-color="#fc5245" />
-                                    <stop offset=".504" stop-color="#e64771" />
-                                    <stop offset=".643" stop-color="#d53e91" />
-                                    <stop offset=".761" stop-color="#cc39a4" />
-                                    <stop offset=".841" stop-color="#c837ab" />
-                                </radialGradient>
-                                <path fill="url(#yOrnnhliCrdS2gy~4tD8ma)"
-                                    d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20 c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20 C42.014,38.383,38.417,41.986,34.017,41.99z" />
-                                <radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813"
-                                    gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0" stop-color="#4168c9" />
-                                    <stop offset=".999" stop-color="#4168c9" stop-opacity="0" />
-                                </radialGradient>
-                                <path fill="url(#yOrnnhliCrdS2gy~4tD8mb)"
-                                    d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20 c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20 C42.014,38.383,38.417,41.986,34.017,41.99z" />
-                                <path fill="#fff"
-                                    d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5 s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z" />
-                                <circle cx="31.5" cy="16.5" r="1.5" fill="#fff" />
-                                <path fill="#fff"
-                                    d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12 C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z" />
-                            </svg></a>
+        <div class="portfolio">
+            <!--=============== HEADER SECTION ===============-->
 
-                        <a href="https://github.com/GeovanneDev" class="home__social-icon"><i
-                                class='bx bxl-github'></i><svg xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="45px"
-                                height="50px" fill-rule="nonzero">
-                                <g fill="#339af0" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                    <g transform="scale(5.12,5.12)">
-                                        <path
-                                            d="M17.791,46.836c0.711,-0.306 1.209,-1.013 1.209,-1.836v-5.4c0,-0.197 0.016,-0.402 0.041,-0.61c-0.014,0.004 -0.027,0.007 -0.041,0.01c0,0 -3,0 -3.6,0c-1.5,0 -2.8,-0.6 -3.4,-1.8c-0.7,-1.3 -1,-3.5 -2.8,-4.7c-0.3,-0.2 -0.1,-0.5 0.5,-0.5c0.6,0.1 1.9,0.9 2.7,2c0.9,1.1 1.8,2 3.4,2c2.487,0 3.82,-0.125 4.622,-0.555c0.934,-1.389 2.227,-2.445 3.578,-2.445v-0.025c-5.668,-0.182 -9.289,-2.066 -10.975,-4.975c-3.665,0.042 -6.856,0.405 -8.677,0.707c-0.058,-0.327 -0.108,-0.656 -0.151,-0.987c1.797,-0.296 4.843,-0.647 8.345,-0.714c-0.112,-0.276 -0.209,-0.559 -0.291,-0.849c-3.511,-0.178 -6.541,-0.039 -8.187,0.097c-0.02,-0.332 -0.047,-0.663 -0.051,-0.999c1.649,-0.135 4.597,-0.27 8.018,-0.111c-0.079,-0.5 -0.13,-1.011 -0.13,-1.543c0,-1.7 0.6,-3.5 1.7,-5c-0.5,-1.7 -1.2,-5.3 0.2,-6.6c2.7,0 4.6,1.3 5.5,2.1c1.699,-0.701 3.599,-1.101 5.699,-1.101c2.1,0 4,0.4 5.6,1.1c0.9,-0.8 2.8,-2.1 5.5,-2.1c1.5,1.4 0.7,5 0.2,6.6c1.1,1.5 1.7,3.2 1.6,5c0,0.484 -0.045,0.951 -0.11,1.409c3.499,-0.172 6.527,-0.034 8.204,0.102c-0.002,0.337 -0.033,0.666 -0.051,0.999c-1.671,-0.138 -4.775,-0.28 -8.359,-0.089c-0.089,0.336 -0.197,0.663 -0.325,0.98c3.546,0.046 6.665,0.389 8.548,0.689c-0.043,0.332 -0.093,0.661 -0.151,0.987c-1.912,-0.306 -5.171,-0.664 -8.879,-0.682c-1.665,2.878 -5.22,4.755 -10.777,4.974v0.031c2.6,0 5,3.9 5,6.6v5.4c0,0.823 0.498,1.53 1.209,1.836c9.161,-3.032 15.791,-11.672 15.791,-21.836c0,-12.682 -10.317,-23 -23,-23c-12.683,0 -23,10.318 -23,23c0,10.164 6.63,18.804 15.791,21.836z" />
-                                    </g>
+            <section class="header">
+                <img class="header-img" src="./SRC/assets/about_me.jpeg" alt="" />
+                <h1>Geovanne</h1>
+                <h2>Frontend Developer</h2>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/geovanne-fernandes-479929238/" class="home__social-icon"><i
+                            class="bx bxl-linkedin"></i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                            width="48px" height="48px">
+                            <path fill="#0078d4"
+                                d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5 V37z">
+                            </path>
+                            <path
+                                d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364 c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274 L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479 C18,16.523,16.521,18,14.485,18H18v19H11z"
+                                opacity=".05"></path>
+                            <path
+                                d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677 c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638 c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001 c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z"
+                                opacity=".07"></path>
+                            <path fill="#fff"
+                                d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12 c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698 c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19 c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z">
+                            </path>
+                        </svg></a>
+
+                    <a href="https://www.instagram.com/_geovanne.fernandes/" class="home__social-icon"><i
+                            class="bx bxl-behance"></i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                            width="48px" height="48px">
+                            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#fd5"></stop>
+                                <stop offset=".328" stop-color="#ff543f"></stop>
+                                <stop offset=".348" stop-color="#fc5245"></stop>
+                                <stop offset=".504" stop-color="#e64771"></stop>
+                                <stop offset=".643" stop-color="#d53e91"></stop>
+                                <stop offset=".761" stop-color="#cc39a4"></stop>
+                                <stop offset=".841" stop-color="#c837ab"></stop>
+                            </radialGradient>
+                            <path fill="url(#yOrnnhliCrdS2gy~4tD8ma)"
+                                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20 c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20 C42.014,38.383,38.417,41.986,34.017,41.99z">
+                            </path>
+                            <radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813"
+                                gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#4168c9"></stop>
+                                <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+                            </radialGradient>
+                            <path fill="url(#yOrnnhliCrdS2gy~4tD8mb)"
+                                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20 c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20 C42.014,38.383,38.417,41.986,34.017,41.99z">
+                            </path>
+                            <path fill="#fff"
+                                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5 s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+                            </path>
+                            <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                            <path fill="#fff"
+                                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12 C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+                            </path>
+                        </svg></a>
+
+                    <a href="https://github.com/GeovanneDev" class="home__social-icon"><i class="bx bxl-github"></i><svg
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0,0,256,256" width="45px" height="50px" fill-rule="nonzero">
+                            <g fill="#339af0" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(5.12,5.12)">
+                                    <path
+                                        d="M17.791,46.836c0.711,-0.306 1.209,-1.013 1.209,-1.836v-5.4c0,-0.197 0.016,-0.402 0.041,-0.61c-0.014,0.004 -0.027,0.007 -0.041,0.01c0,0 -3,0 -3.6,0c-1.5,0 -2.8,-0.6 -3.4,-1.8c-0.7,-1.3 -1,-3.5 -2.8,-4.7c-0.3,-0.2 -0.1,-0.5 0.5,-0.5c0.6,0.1 1.9,0.9 2.7,2c0.9,1.1 1.8,2 3.4,2c2.487,0 3.82,-0.125 4.622,-0.555c0.934,-1.389 2.227,-2.445 3.578,-2.445v-0.025c-5.668,-0.182 -9.289,-2.066 -10.975,-4.975c-3.665,0.042 -6.856,0.405 -8.677,0.707c-0.058,-0.327 -0.108,-0.656 -0.151,-0.987c1.797,-0.296 4.843,-0.647 8.345,-0.714c-0.112,-0.276 -0.209,-0.559 -0.291,-0.849c-3.511,-0.178 -6.541,-0.039 -8.187,0.097c-0.02,-0.332 -0.047,-0.663 -0.051,-0.999c1.649,-0.135 4.597,-0.27 8.018,-0.111c-0.079,-0.5 -0.13,-1.011 -0.13,-1.543c0,-1.7 0.6,-3.5 1.7,-5c-0.5,-1.7 -1.2,-5.3 0.2,-6.6c2.7,0 4.6,1.3 5.5,2.1c1.699,-0.701 3.599,-1.101 5.699,-1.101c2.1,0 4,0.4 5.6,1.1c0.9,-0.8 2.8,-2.1 5.5,-2.1c1.5,1.4 0.7,5 0.2,6.6c1.1,1.5 1.7,3.2 1.6,5c0,0.484 -0.045,0.951 -0.11,1.409c3.499,-0.172 6.527,-0.034 8.204,0.102c-0.002,0.337 -0.033,0.666 -0.051,0.999c-1.671,-0.138 -4.775,-0.28 -8.359,-0.089c-0.089,0.336 -0.197,0.663 -0.325,0.98c3.546,0.046 6.665,0.389 8.548,0.689c-0.043,0.332 -0.093,0.661 -0.151,0.987c-1.912,-0.306 -5.171,-0.664 -8.879,-0.682c-1.665,2.878 -5.22,4.755 -10.777,4.974v0.031c2.6,0 5,3.9 5,6.6v5.4c0,0.823 0.498,1.53 1.209,1.836c9.161,-3.032 15.791,-11.672 15.791,-21.836c0,-12.682 -10.317,-23 -23,-23c-12.683,0 -23,10.318 -23,23c0,10.164 6.63,18.804 15.791,21.836z">
+                                    </path>
                                 </g>
-                            </svg></a>
-                    </div>
-
+                            </g>
+                        </svg></a>
                 </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path
-                                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path
-                                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                            <image class="home__blob-img" x="0" y="0" href="./SRC/assets/about_me.jpeg" />
-                        </g>
-                    </svg>
-                </div>
+                <a href="" class="cta">DownIoad CV</a>
             </section>
 
+            <!--=============== CONTENT SECTION ===============-->
 
-            <section class="section_about" id="about">
-                <div class="section_about-written">
+            <div class="content">
+                <!--=============== HOME ===============-->
 
-                    <h1 class="section_about__tile">
-                        Sobre Mim
+                <section class="content-card home" id="welcome-section">
+                    <h1>
+                        Olá <img src="./SRC/assets/mao.gif" alt="" width="40px" height="40px"><br> eu sou
+                        <Span>Geovanne Fernandes;</Span>
                     </h1>
+                </section>
 
-                    <h2>
-                        Eu sou Geovanne Fernandes;
-                    </h2>
+                <!--=============== ABOUT ME ===============-->
 
-                    <p>
-                        Meu nome é Geovanne Fernandes de Freitas, tenho 19 anos, moro em Belo-Horizonte (MG), Atualmente
-                        "atuo" TI técnico na EstrelaBet. <br>
-                        Sempre gostei da forma de como os sites eram desenvolvidos, as posições dos elementos, <br>
-                        a semantica e foi por isso que Front-End sempre me despertou interesse. Venho me dedicando dia
-                        após dia a programação. Sempre buscando evoluir minhas habilidades <br>
-                        como desenvolvedor. <br>
-                        <br>
-                        ''Faça como um programador. Quando tudo está errado e confuso, apague tudo e recomece do zero.''
-                    </p>
-                </div>
-
-
-
-                <div class="section_about-btns">
-
-                    <a href="" class="">
+                <section class="content-card about" id="about">
+                    <h1>Sobre Mim</h1>
+                    <div class="about-item about-me">
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none">
-                                <path
-                                    d="M10 13C10.4295 13.5741 10.9774 14.0492 11.6066 14.3929C12.2357 14.7367 12.9315 14.9411 13.6467 14.9923C14.3618 15.0435 15.0796 14.9404 15.7513 14.6898C16.4231 14.4392 17.0331 14.0471 17.54 13.54L20.54 10.54C21.4508 9.59699 21.9548 8.33397 21.9434 7.02299C21.932 5.71201 21.4061 4.45794 20.4791 3.5309C19.5521 2.60386 18.298 2.07802 16.987 2.06663C15.676 2.05523 14.413 2.55921 13.47 3.47L11.75 5.18"
-                                    stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M14.0002 11C13.5707 10.4259 13.0228 9.95081 12.3936 9.60706C11.7645 9.2633 11.0687 9.05888 10.3535 9.00766C9.63841 8.95645 8.92061 9.05963 8.24885 9.31021C7.5771 9.5608 6.96709 9.95293 6.4602 10.46L3.4602 13.46C2.54941 14.403 2.04544 15.666 2.05683 16.977C2.06822 18.288 2.59407 19.542 3.52111 20.4691C4.44815 21.3961 5.70221 21.922 7.01319 21.9334C8.32418 21.9448 9.58719 21.4408 10.5302 20.53L12.2402 18.82"
-                                    stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            currículo
+                            Meu nome é Geovanne Fernandes de Freitas, tenho 19 anos, moro em Belo-Horizonte (MG),
+                            Atualmente "atuo" TI técnico na EstrelaBet.
+                            Sempre gostei da forma de como os sites eram desenvolvidos, as posições dos elementos,
+                            a semantica e foi por isso que Front-End sempre me despertou interesse. Venho me dedicando
+                            dia após dia a programação. Sempre buscando evoluir minhas habilidades
+                            como desenvolvedor.
                         </p>
-                    </a>
-
-                    <a href="mailto:geovannefernandes80@gmail.com" class="">
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px">
-                                <path fill="#e0e0e0"
-                                    d="M5.5,40.5h37c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11v26C2,38.933,3.567,40.5,5.5,40.5z" />
-                                <path fill="#d9d9d9"
-                                    d="M26,40.5h16.5c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11L26,40.5z" />
-                                <path fill="#eee" d="M6.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L6.745,40.5z" />
-                                <path fill="#e0e0e0"
-                                    d="M25.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L18.771,31.616L25.745,40.5z" />
-                                <path fill="#ca3737"
-                                    d="M42.5,9.5h-37C3.567,9.5,2,9.067,2,11v26c0,1.933,1.567,3.5,3.5,3.5H7V12h34v28.5h1.5c1.933,0,3.5-1.567,3.5-3.5V11C46,9.067,44.433,9.5,42.5,9.5z" />
-                                <path fill="#f5f5f5"
-                                    d="M42.5,7.5H24H5.5C3.567,7.5,2,9.036,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.036,44.433,7.5,42.5,7.5z" />
-                                <path fill="#e84f4b"
-                                    d="M43.246,7.582L24,21L4.754,7.582C3.18,7.919,2,9.297,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.297,44.82,7.919,43.246,7.582z" />
-                            </svg>
-                            e-mail
+                            ''Faça como um programador. Quando tudo está errado e confuso, apague tudo e recomece do
+                            zero.''
                         </p>
-                    </a>
-                </div>
-            </section>
+                    </div>
 
+                    <div class="col-2">
+                        <div class="about-item skills">
+                            <h1>Skills</h1>
+                            <span class="skill">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40px" height="40px">
+                                    <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
+                                        data-darkreader-inline-fill="" style="--darkreader-inline-fill: #ff762b;">
+                                    </path>
+                                    <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"
+                                        data-darkreader-inline-fill="" style="--darkreader-inline-fill: #ff7c1a;">
+                                    </path>
+                                    <path fill="#FFF"
+                                        d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"
+                                        data-darkreader-inline-fill="" style="--darkreader-inline-fill: #e8e6e3;">
+                                    </path>
+                                    <path fill="#EEE"
+                                        d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"
+                                        data-darkreader-inline-fill="" style="--darkreader-inline-fill: #dddad6;">
+                                    </path>
+                                </svg>
+                                HTML5
+                            </span>
+                            <span class="skill">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40px" height="40px">
+                                    <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
+                                    <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
+                                    <path fill="#FFF"
+                                        d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z" />
+                                    <path fill="#EEE"
+                                        d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z" />
+                                </svg>
+                                CSS
+                            </span>
 
-            <section class="skills section" id="skills">
-                <h2 class="section-title"></h2>
+                            <span class="skill">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40px" height="40px">
+                                    <path fill="#ffd600" d="M6,42V6h36v36H6z" />
+                                    <path fill="#000001"
+                                        d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z" />
+                                </svg>
+                                JavaScript
+                            </span>
 
-                <div class="skills__container bd-grid">
-                    <div>
-                        <h2 class="skills__subtitle">Habilidades Profissionais</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id
-                            vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40px"
-                                        height="40px">
-                                        <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
-                                        <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
-                                        <path fill="#FFF"
-                                            d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z" />
-                                        <path fill="#EEE"
-                                            d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z" />
-                                    </svg>
-                                    HTML5
-                                </span>
+                            <span class="skill">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.343 42" width="40px"
+                                    height="40px">
+                                    <g data-name="Слой 2">
+                                        <path fill="#2684ff"
+                                            d="M20.172,27.858,13.314,21l6.858-6.858V0L.586,19.586a2,2,0,0,0,0,2.828L20.172,42s3-2,3-7A11.639,11.639,0,0,0,20.172,27.858Z" />
+                                        <path fill="#1d78f2"
+                                            d="M14.385,19.667l.131.131,5.656-5.656V0L9.571,10.6A20.2,20.2,0,0,0,14.385,19.667Z" />
+                                        <path fill="#126ae5"
+                                            d="M15.832,18.285l.1.1,4.242-4.242V0L11.306,8.866A18.21,18.21,0,0,0,15.832,18.285Z" />
+                                        <path fill="#0b60da"
+                                            d="M20.172,14.142V0l-7,7a15.546,15.546,0,0,0,4.171,9.97Z" />
+                                        <path fill="#0154ce"
+                                            d="M15.172,7c0,4.746,3.407,8.371,3.585,8.556l1.415-1.414V0L15.35,4.822A13.161,13.161,0,0,0,15.172,7Z" />
+                                        <path fill="#2482fd"
+                                            d="M20.172,14.142,27.029,21l-6.857,6.858V42L39.757,22.414a2,2,0,0,0,0-2.828L20.172,0s-3,2-3,7A11.639,11.639,0,0,0,20.172,14.142Z" />
+                                        <path fill="#1d78f2"
+                                            d="M25.958,22.333l-.131-.131-5.655,5.656V42l10.6-10.6A20.2,20.2,0,0,0,25.958,22.333Z" />
+                                        <path fill="#126ae5"
+                                            d="M24.511,23.715l-.1-.1-4.241,4.242V42l8.866-8.866A18.216,18.216,0,0,0,24.511,23.715Z" />
+                                        <path fill="#0b60da" d="M20.172,27.858V42l7-7A15.545,15.545,0,0,0,23,25.03Z" />
+                                        <path fill="#0154ce"
+                                            d="M25.172,35c0-4.746-3.407-8.371-3.586-8.556l-1.414,1.414V42l4.822-4.822A13.27,13.27,0,0,0,25.172,35Z" />
+                                        <path fill="#2684ff"
+                                            d="M20.172,27.858,13.314,21H2.172v3l18,18s3-2,3-7A11.639,11.639,0,0,0,20.172,27.858Z" />
+                                    </g>
+                                </svg>
+                                Jira
+                            </span>
+
+                            <span class="skill">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40px" height="40px">
+                                    <path fill="#e64a19"
+                                        d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z" />
+                                    <path fill="#7c4dff"
+                                        d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z" />
+                                    <path fill="#66bb6a"
+                                        d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z" />
+                                    <path fill="#ff7043"
+                                        d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z" />
+                                    <circle cx="32" cy="24" r="7" fill="#29b6f6" />
+                                </svg>
+                                Figma
+                            </span>
+
+                            <span class="skill">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40px" height="40px">
+                                    <path fill="#F4511E"
+                                        d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z" />
+                                </svg>
+                                Git and GitHub
+                            </span>
+                        </div>
+                        <!-- 
+                        <div class="about-item languages">
+                            <h1>Languages</h1>
+                            <div class="language">
+                                <p>polish</p>
+                                <span class="bar"><span class="polish"></span></span>
                             </div>
-                            <div class="skills__bar skills__html">
-
+                            <div class="language">
+                                <p>english</p>
+                                <span class="bar"><span class="english"></span></span>
                             </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
+                            <div class="language">
+                                <p>french</p>
+                                <span class="bar"><span class="french"></span></span>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+
+                <!--=============== PROJECTS ===============-->
+
+                <!-- <section class="content-card projects" id="projects">
+                    <h1>Projects</h1>
+                    <div class="col-2 project-list">
+                        <div class="project-tile">
+                            <img src="https://shots.codepen.io/nietoperq/pen/BaPJqGW-512.webp?version=1674304822"
+                                alt="" />
+                            <div class="overlay">
+                                <div class="project-description">
+                                    <h3>Project 1</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi aperiam voluptate accusamus velit omnis.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40px"
-                                        height="40px">
-                                        <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
-                                        <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
-                                        <path fill="#FFF"
-                                            d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z" />
-                                        <path fill="#EEE"
-                                            d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z" />
-                                    </svg>
-                                    CSS
-                                </span>
-                            </div>
-                            <div class="skills__bar skills__css">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
+                        <div class="project-tile">
+                            <img src="https://shots.codepen.io/nietoperq/pen/GRBOjyV-512.webp?version=1674084446"
+                                alt="" />
+                            <div class="overlay">
+                                <div class="project-description">
+                                    <h3>Project 2</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi aperiam voluptate accusamus velit omnis.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon'></i>
-                                <span class="skills__name">
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40px"
-                                        height="40px">
-                                        <path fill="#ffd600" d="M6,42V6h36v36H6z" />
-                                        <path fill="#000001"
-                                            d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z" />
-                                    </svg>
-
-                                    JAVASCRIPT
-                                </span>
-                            </div>
-                            <div class="skills__bar skills__js">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">30%</span>
+                        <div class="project-tile">
+                            <img src="https://shots.codepen.io/nietoperq/pen/dyjWxgX-512.webp?version=1673554073"
+                                alt="" />
+                            <div class="overlay">
+                                <div class="project-description">
+                                    <h3>Project 3</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi aperiam voluptate accusamus velit omnis.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40px"
-                                        height="40px">
-                                        <path fill="#d43a02"
-                                            d="M23.65,24.898c-0.998-1.609-1.722-2.943-2.725-5.455C19.229,15.2,31.24,11.366,26.37,3.999 c2.111,5.089-7.577,8.235-8.477,12.473C17.07,20.37,23.645,24.898,23.65,24.898z" />
-                                        <path fill="#d43a02"
-                                            d="M23.878,17.27c-0.192,2.516,2.229,3.857,2.299,5.695c0.056,1.496-1.447,2.743-1.447,2.743 s2.728-0.536,3.579-2.818c0.945-2.534-1.834-4.269-1.548-6.298c0.267-1.938,6.031-5.543,6.031-5.543S24.311,11.611,23.878,17.27z" />
-                                        <linearGradient id="P9ujQJgz7XN9Qbny9S64Ha" x1="22.677" x2="30.737" y1="21.174"
-                                            y2="43.318" gradientUnits="userSpaceOnUse">
-                                            <stop offset="0" stop-color="#5c65d6" />
-                                            <stop offset=".999" stop-color="#464eb0" />
-                                        </linearGradient>
-                                        <path fill="url(#P9ujQJgz7XN9Qbny9S64Ha)"
-                                            d="M32.084,25.055c1.754-0.394,3.233,0.723,3.233,2.01c0,2.901-4.021,5.643-4.021,5.643 s6.225-0.742,6.225-5.505C37.521,24.053,34.464,23.266,32.084,25.055z M29.129,27.395c0,0,1.941-1.383,2.458-1.902 c-4.763,1.011-15.638,1.147-15.638,0.269c0-0.809,3.507-1.638,3.507-1.638s-7.773-0.112-7.773,2.181 C11.683,28.695,21.858,28.866,29.129,27.395z" />
-                                        <linearGradient id="P9ujQJgz7XN9Qbny9S64Hb" x1="19.498" x2="27.296" y1="22.77"
-                                            y2="44.196" gradientUnits="userSpaceOnUse">
-                                            <stop offset="0" stop-color="#5c65d6" />
-                                            <stop offset=".999" stop-color="#464eb0" />
-                                        </linearGradient>
-                                        <path fill="url(#P9ujQJgz7XN9Qbny9S64Hb)"
-                                            d="M27.935,29.571 c-4.509,1.499-12.814,1.02-10.354-0.993c-1.198,0-2.974,0.963-2.974,1.889c0,1.857,8.982,3.291,15.63,0.572L27.935,29.571z" />
-                                        <linearGradient id="P9ujQJgz7XN9Qbny9S64Hc" x1="18.698" x2="26.59" y1="23.455"
-                                            y2="45.14" gradientUnits="userSpaceOnUse">
-                                            <stop offset="0" stop-color="#5c65d6" />
-                                            <stop offset=".999" stop-color="#464eb0" />
-                                        </linearGradient>
-                                        <path fill="url(#P9ujQJgz7XN9Qbny9S64Hc)"
-                                            d="M18.686,32.739 c-1.636,0-2.695,1.054-2.695,1.822c0,2.391,9.76,2.632,13.627,0.205l-2.458-1.632C24.271,34.404,17.014,34.579,18.686,32.739z" />
-                                        <linearGradient id="P9ujQJgz7XN9Qbny9S64Hd" x1="18.03" x2="25.861" y1="24.198"
-                                            y2="45.712" gradientUnits="userSpaceOnUse">
-                                            <stop offset="0" stop-color="#5c65d6" />
-                                            <stop offset=".999" stop-color="#464eb0" />
-                                        </linearGradient>
-                                        <path fill="url(#P9ujQJgz7XN9Qbny9S64Hd)"
-                                            d="M36.281,36.632 c0-0.936-1.055-1.377-1.433-1.588c2.228,5.373-22.317,4.956-22.317,1.784c0-0.721,1.807-1.427,3.477-1.093l-1.42-0.839 C11.26,34.374,9,35.837,9,37.017C9,42.52,36.281,42.255,36.281,36.632z" />
-                                        <linearGradient id="P9ujQJgz7XN9Qbny9S64He" x1="20.725" x2="28.228" y1="24.582"
-                                            y2="45.197" gradientUnits="userSpaceOnUse">
-                                            <stop offset="0" stop-color="#5c65d6" />
-                                            <stop offset=".999" stop-color="#464eb0" />
-                                        </linearGradient>
-                                        <path fill="url(#P9ujQJgz7XN9Qbny9S64He)"
-                                            d="M39,38.604 c-4.146,4.095-14.659,5.587-25.231,3.057C24.341,46.164,38.95,43.628,39,38.604z" />
-                                    </svg>
-                                    JAVA
-                                </span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">10%</span>
+                        <div class="project-tile">
+                            <img src="https://shots.codepen.io/nietoperq/pen/vYagdwo-512.webp?version=1673549480"
+                                alt="" />
+                            <div class="overlay">
+                                <div class="project-description">
+                                    <h3>Project 4</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi aperiam voluptate accusamus velit omnis.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <a href="https://github.com/nietoperq">see more...</a>
+                </section> -->
 
-                    <div>
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                <!--=============== EXPERIÊNCIA ===============-->
+
+                <section class="content-card experience" id="experience">
+                    <h1>Experiência</h1>
+                    <div class="timeline">
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022 - Atualmente</div>
+                                <div class="timeline-content">
+                                    <h3>EstrelaBet</h3>
+                                    <p>
+                                        Realizar Testes Funcionais e monitorar o desempenho dos recursos técnicos da
+                                        Plataforma.
+                                        Identificar bugs e possibilidades de melhorias no dia a dia.
+                                        Desenvolvimento de software: Desenvolvendo Leading Pages usando tecnologias
+                                        HTML5, CSS, JavaScript e trabalhando com Git e GitHub Help Desk: GLPI - Jira e
+                                        Zendesk.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2021 - 2022</div>
+                                <div class="timeline-content">
+                                    <h3>CEDUC Virgilio Resi</h3>
+                                    <p>
+                                        Programa de <b>menor aprendiz</b>, responsável por controle de planilhas , atendimento
+                                        ao público, suporte ao cliente , dentre demais funções de Auxiliar
+                                        Administrativo.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
-            </section>
-        </main>
+                </section>
+
+                <!--=============== CONTATO ===============-->
+
+                <section class="content-card contact" id="contact">
+                    <h1>CONTATO</h1>
+                    <form class="form" id="form" action="https://www.freecodecamp.com/email-submit">
+                        <div class="input-box">
+                            <input type="text" class="text-input" name="name" placeholder="Name" />
+                        </div>
+                        <div class="input-box">
+                            <input type="email" class="text-input" name="email" id="email" placeholder="Email" />
+                        </div>
+                        <div class="input-box">
+                            <input type="subject" class="text-input" name="subject" id="subject"
+                                placeholder="Subject" />
+                        </div>
+                        <div class="input-box">
+                            <textarea name="text" class="message" placeholder="Message..."></textarea>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="submit-btn" id="submit" value="submit" />
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
     </div>
 </body>
 <script src="./SRC/main.js"></script>
