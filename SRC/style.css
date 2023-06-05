@@ -92,15 +92,15 @@ h2 {
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
 }
 
-.menu-icon {
+.menu-icon  {
   font-size: 2rem;
   color: var(--light-grey);
-  margin: 15px;
+  margin: 5px;
+  animation: backInDown;
+  animation-duration: 4s;
 }
 
-.menu-icon:hover {
-  color: var(--accent-color);
-}
+
 
 /*=============== PORTFOLIO CONTAINER ===============*/
 
@@ -220,6 +220,8 @@ span {
 .about {
   display: flex;
   flex-direction: column;
+  animation: fadeInDown;
+  animation-duration: 4s;
 }
 
 .about-item {
